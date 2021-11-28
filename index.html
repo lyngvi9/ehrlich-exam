@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/slick.css" rel="stylesheet">
+        <link href="css/slick-theme.css" rel="stylesheet">
+        
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="p-4 px-3 px-md-5">
+            <div class="d-md-flex flex-nowrap align-items-center">
+                <a href="#" class="logo me-auto me-md-0">
+                    <svg width="144" height="28" viewBox="0 0 144 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.08 27H11.672V26.496H7.676V14.04H10.592C14.048 14.04 14.624 16.668 15.272 19.44H15.668V8.244H15.272C14.228 12.564 13.22 13.536 10.016 13.536H7.676V1.872H13.652C17.612 1.872 19.052 3.852 20.276 7.596H20.672V1.368H0.08V1.872H4.076V26.496H0.08V27ZM15.7898 27H23.5298V26.496H19.5338L23.3138 16.488H31.6658L35.4458 26.496H31.4498V27H42.5378V26.496H39.3338L29.5418 0.719999H28.6778L18.9578 26.496H15.7898V27ZM31.4498 15.984H23.5298L27.4898 5.508L31.4498 15.984ZM41.6094 27H42.1494C42.3294 26.532 42.5094 26.208 43.2294 26.208C44.0574 26.208 45.2814 26.712 46.2174 27C47.8734 27.432 48.7374 27.54 50.7534 27.54C56.4414 27.54 59.8974 23.508 59.8974 19.044C59.8974 14.112 55.5414 13.032 53.7414 12.456L49.3854 11.088C46.9014 10.296 44.2014 9.252 44.2014 6.156C44.2014 2.34 47.8014 1.224 50.1414 1.224C54.2454 1.224 56.3694 4.428 56.9454 7.884H57.3774V1.368H56.8734C56.5134 2.052 56.4054 2.124 55.7934 2.124C54.4254 2.124 53.4894 0.719999 50.1414 0.719999C45.4974 0.719999 42.2574 3.924 42.2574 8.28C42.2574 11.556 44.2734 13.428 48.1614 14.616L52.3014 15.876C54.3174 16.488 57.1254 17.856 57.1254 21.204C57.1254 23.544 55.8294 27.036 50.7534 27.036C48.0894 27.036 43.6614 27.072 42.0054 19.26H41.6094V27ZM60.4011 27H71.9931V26.496H67.9971V14.148H79.9851V26.496H75.9891V27H87.5811V26.496H83.5851V1.872H87.5811V1.368H75.9891V1.872H79.9851V13.644H67.9971V1.872H71.9931V1.368H60.4011V1.872H64.3971V26.496H60.4011V27ZM86.0846 27H94.7246V26.496H91.9526V11.556H86.0846V12.06H88.8566V26.496H86.0846V27ZM88.4246 3.168C88.4246 4.212 89.2886 5.076 90.3326 5.076C91.3766 5.076 92.2406 4.212 92.2406 3.168C92.2406 2.124 91.3766 1.26 90.3326 1.26C89.2886 1.26 88.4246 2.124 88.4246 3.168ZM94.5769 14.148C94.5769 21.096 99.8689 27.54 107.105 27.54C114.125 27.54 119.633 20.88 119.633 14.148C119.633 6.48 113.441 0.719999 107.105 0.719999C101.201 0.719999 94.5769 6.48 94.5769 14.148ZM98.7169 14.148C98.7169 7.524 100.085 1.224 107.105 1.224C114.125 1.224 115.493 7.524 115.493 14.148C115.493 22.788 113.297 27.036 107.105 27.036C100.913 27.036 98.7169 22.788 98.7169 14.148ZM119.238 27H127.77V26.496H123.774V3.348H123.846L139.002 27.504H139.722V1.872H143.718V1.368H135.186V1.872H139.182V20.988H139.11L126.942 1.368H119.238V1.872H123.234V26.496H119.238V27Z" fill="black"/>
+                    </svg>                        
+                </a>
+                <nav class="nav d-none d-md-flex main-nav me-md-auto ms-4">
+                    <a href="#" class="nav-link">New</a>
+                    <a href="#" class="nav-link">Shop</a>
+                    <a href="#" class="nav-link">Sale</a>
+                </nav>
+                <nav class="nav d-none d-md-flex">
+                    <a href="#" class="nav-link">
+                        <i class="bi-search"></i>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="bi-person"></i>                                                                      
+                    </a>
+                    <a href="#" class="nav-link dropdown">
+                        <i class="bi-cart"></i>                               
+                    </a>
+                </nav>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"><i class="bi-list"></i></span>
+                </button>
+                <div class="navbar-collapse collapse d-md-none" id="mobileNav">
+                    <ul class="navbar-nav main-nav mt-4">
+                        <a href="#" class="nav-link">New</a>
+                        <a href="#" class="nav-link">Shop</a>
+                        <a href="#" class="nav-link">Sale</a>
+                    </ul>
+                    <ul class="nav mobile-icon-nav">
+                        <a href="#" class="nav-link">
+                            <i class="bi-search"></i>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="bi-person"></i>                                                                      
+                        </a>
+                        <a href="#" class="nav-link dropdown">
+                            <i class="bi-cart" id="cartMenu"></i>              
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main role="main">
+            <!-- HERO -->
+            <div id="main-hero" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/main-img.png" class="main-hero-img" title="main-img-1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="position-relative">
+                                <h1>New Arrival</h1>
+                                <a href="#" class="btn btn-black hero-btn">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/main-img2.png" class="main-hero-img" title="main-img-1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="position-relative">
+                                <h1>New Arrival</h1>
+                                <a href="#" class="btn btn-black hero-btn">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-block btn-black d-block d-md-none">Shop Now</a>
+
+            <!-- COLLECTION INTRO-->
+            <div class="container" style="padding-top:120px;padding-bottom:80px;">
+                <h2 class="didot">Our Collection</h2>
+                <p class="ps-5 pe-4">Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+            </div>
+
+            <!-- COLLECTION PRODUCTS -->
+            <div class="container" style="padding-bottom:120px">
+                <div id="collection-rod" class="collection-products" style="margin-bottom:60px;">
+                    <div class="p-2">
+                        <figure class="product-image">
+                            <img src="images/collectible-1.png" class="img-fluid" title="Product 1">
+                            <figcaption>
+                                Quick View
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                        <p class="text-muted mt-3">Product 1</p>
+                        <div class="d-flex">
+                            <span class="price fw-bold me-auto">$150.00</span>
+                            <div class="d-flex">
+                                <div class="rating me-2">4.0 <i class="bi-star-fill"></i></div>
+                                (1,200)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <figure class="product-image">
+                            <img src="images/collectible-2.png" class="img-fluid" title="Product 2">
+                            <figcaption>
+                                Quick View
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                        <p class="text-muted mt-3">Product 2</p>
+                        <div class="d-flex">
+                            <span class="price fw-bold me-auto">$150.00</span>
+                            <div class="d-flex">
+                                <div class="rating me-2">4.0 <i class="bi-star-fill"></i></div>
+                                (1,200)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <figure class="product-image">
+                            <img src="images/collectible-3.png" class="img-fluid" title="Product 3">
+                            <figcaption>
+                                Quick View
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                        <p class="text-muted mt-3">Product 3</p>
+                        <div class="d-flex">
+                            <span class="price fw-bold me-auto">$150.00</span>
+                            <div class="d-flex">
+                                <div class="rating me-2">4.0 <i class="bi-star-fill"></i></div>
+                                (1,200)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <figure class="product-image">
+                            <img src="images/collectible-4.png" class="img-fluid" title="Product 4">
+                            <figcaption>
+                                Quick View
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                        <p class="text-muted mt-3">Product 4</p>
+                        <div class="d-flex">
+                            <span class="price fw-bold me-auto">$150.00</span>
+                            <div class="d-flex">
+                                <div class="rating me-2">4.0 <i class="bi-star-fill"></i></div>
+                                (1,200)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <figure class="product-image">
+                            <img src="images/collectible-5.png" class="img-fluid" title="Product 5">
+                            <figcaption>
+                                Quick View
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                        <p class="text-muted mt-3">Product 5</p>
+                        <div class="d-flex">
+                            <span class="price fw-bold me-auto">$150.00</span>
+                            <div class="d-flex">
+                                <div class="rating me-2">4.0 <i class="bi-star-fill"></i></div>
+                                (1,200)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center"><a href="#" class="btn btn-black">View Collection</a></p>
+            </div>
+
+            <!-- IMAGE BLOCK -->
+            <div class="d-md-flex">
+                <div class="col-md-6 p-0 preview-product">
+                    <a href="#">
+                        <img src="images/image-block1.png" class="img-fluid">
+                        <figcaption>View Product</figcaption>
+                    </a>
+                </div>
+                <div class="col-md-6 p-0">
+                    <div class="d-md-flex">
+                        <div class="col-md-12 p-0 preview-product">
+                            <a href="#">
+                                <img src="images/image-block2.png" class="img-fluid">
+                                <figcaption>View Product</figcaption>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-md-flex">
+                        <div class="col-md-6 p-0 preview-product">
+                            <a href="#">
+                                <img src="images/image-block3.png" class="img-fluid">
+                                <figcaption>View Product</figcaption>
+                            </a>
+                        </div>
+                        <div class="col-md-6 p-0 preview-product">
+                            <a href="#">
+                                <img src="images/image-block4.png" class="img-fluid">
+                                <figcaption>View Product</figcaption>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ABOUT US-->
+            <div class="container" style="padding-top:120px;padding-bottom:120px">
+                <h2 class="">About Us</h2>
+                <p class="ps-5 pe-4">Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+            </div>
+
+            <!-- SERVICES BLOCK -->
+            <div class="container" style="padding-top:60px;padding-bottom:120px;">
+                <div class="d-md-flex">
+                    <div class="service-block">
+                        <div class="d-md-flex align-items-start">
+                            <img src="images/service-deliver.png" class="mb-3" style="flex: 0 0 24px">
+                            <div class="ps-md-3">
+                                <h5>Free Shipping</h5>
+                                <p>International shipping available
+                                    for all orders over $100</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-block">
+                        <div class="d-md-flex align-items-start">
+                            <img src="images/service-cashback.png" class="mb-3" style="flex: 0 0 24px">
+                            <div class="ps-md-3">
+                                <h5>Cashback Reward</h5>
+                                <p>Collect & Redeem on every order
+                                    that you purchased</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-block">
+                        <div class="d-md-flex align-items-start">
+                            <img src="images/service-payment.png" class="mb-3" style="flex: 0 0 24px">
+                            <div class="ps-md-3">
+                                <h5>Secure Payment</h5>
+                                <p>Guarantee 100% secure payment
+                                    online on our website</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="px-5 text-white">
+            <div class="d-md-flex" style="padding-top:120px;padding-bottom:80px;">
+                <div class="col-md-3 mb-5 mb-md-0">
+                    <svg width="144" height="28" viewBox="0 0 144 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.08 27H11.672V26.496H7.676V14.04H10.592C14.048 14.04 14.624 16.668 15.272 19.44H15.668V8.244H15.272C14.228 12.564 13.22 13.536 10.016 13.536H7.676V1.872H13.652C17.612 1.872 19.052 3.852 20.276 7.596H20.672V1.368H0.08V1.872H4.076V26.496H0.08V27ZM15.7898 27H23.5298V26.496H19.5338L23.3138 16.488H31.6658L35.4458 26.496H31.4498V27H42.5378V26.496H39.3338L29.5418 0.719999H28.6778L18.9578 26.496H15.7898V27ZM31.4498 15.984H23.5298L27.4898 5.508L31.4498 15.984ZM41.6094 27H42.1494C42.3294 26.532 42.5094 26.208 43.2294 26.208C44.0574 26.208 45.2814 26.712 46.2174 27C47.8734 27.432 48.7374 27.54 50.7534 27.54C56.4414 27.54 59.8974 23.508 59.8974 19.044C59.8974 14.112 55.5414 13.032 53.7414 12.456L49.3854 11.088C46.9014 10.296 44.2014 9.252 44.2014 6.156C44.2014 2.34 47.8014 1.224 50.1414 1.224C54.2454 1.224 56.3694 4.428 56.9454 7.884H57.3774V1.368H56.8734C56.5134 2.052 56.4054 2.124 55.7934 2.124C54.4254 2.124 53.4894 0.719999 50.1414 0.719999C45.4974 0.719999 42.2574 3.924 42.2574 8.28C42.2574 11.556 44.2734 13.428 48.1614 14.616L52.3014 15.876C54.3174 16.488 57.1254 17.856 57.1254 21.204C57.1254 23.544 55.8294 27.036 50.7534 27.036C48.0894 27.036 43.6614 27.072 42.0054 19.26H41.6094V27ZM60.4011 27H71.9931V26.496H67.9971V14.148H79.9851V26.496H75.9891V27H87.5811V26.496H83.5851V1.872H87.5811V1.368H75.9891V1.872H79.9851V13.644H67.9971V1.872H71.9931V1.368H60.4011V1.872H64.3971V26.496H60.4011V27ZM86.0846 27H94.7246V26.496H91.9526V11.556H86.0846V12.06H88.8566V26.496H86.0846V27ZM88.4246 3.168C88.4246 4.212 89.2886 5.076 90.3326 5.076C91.3766 5.076 92.2406 4.212 92.2406 3.168C92.2406 2.124 91.3766 1.26 90.3326 1.26C89.2886 1.26 88.4246 2.124 88.4246 3.168ZM94.5769 14.148C94.5769 21.096 99.8689 27.54 107.105 27.54C114.125 27.54 119.633 20.88 119.633 14.148C119.633 6.48 113.441 0.719999 107.105 0.719999C101.201 0.719999 94.5769 6.48 94.5769 14.148ZM98.7169 14.148C98.7169 7.524 100.085 1.224 107.105 1.224C114.125 1.224 115.493 7.524 115.493 14.148C115.493 22.788 113.297 27.036 107.105 27.036C100.913 27.036 98.7169 22.788 98.7169 14.148ZM119.238 27H127.77V26.496H123.774V3.348H123.846L139.002 27.504H139.722V1.872H143.718V1.368H135.186V1.872H139.182V20.988H139.11L126.942 1.368H119.238V1.872H123.234V26.496H119.238V27Z" fill="white"/>
+                    </svg>
+                    <div class="my-4">
+                        1844 Conference Center Way<br>
+                        Scranton, Pennsylvania 18503
+                    </div>
+                    <div class="my-4">
+                        <a href="tel:+570-969-5872" class="text-white">+570-969-5872</a>
+                    </div>
+                    <div class="">
+                        <a href="mailto:support@fashion.com" class="text-white">support@fashion.com</a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-5 mb-md-0">
+                    <h5>FAQs</h5>
+                    <ul class="nav foot-nav pt-3">
+                        <li><a class="nav-link">Information</a></li>
+                        <li><a class="nav-link">Payment</a></li>
+                        <li><a class="nav-link">Shipping</a></li>
+                        <li><a class="nav-link">Returns</a></li>
+                        <li><a class="nav-link">Gift Card</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-5 mb-md-0">
+                    <h5>Company</h5>
+                    <ul class="nav foot-nav pt-3">
+                        <li><a class="nav-link">Delivery</a></li>
+                        <li><a class="nav-link">Collection</a></li>
+                        <li><a class="nav-link">Blog</a></li>
+                        <li><a class="nav-link">Contact Us</a></li>
+                        <li><a class="nav-link">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Newsletter</h5>
+                    <p class="py-3">Be the first to get the latest news about trend,
+                        promotions and much more!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email">
+                        <button type="submit">
+                            <img src="images/newsletter-button.png">
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="py-4 text-end" style="border-top:1px solid #fff">
+                <p>Accepting <img class="ms-3 me-2" src="../images/card-visa.png"><img class="me-2" src="../images/card-mastercard.png"><img src="../images/card-paypal.png"></p>
+            </div>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/slick.min.js"></script>
+
+        <script>
+            $('.collection-products').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 769,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            dots: true,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow:1,
+                            slidesToScroll:1,
+                            arrows: false
+                        }
+                    }
+                ]
+            });
+        </script>
+    </body>
+</html>
